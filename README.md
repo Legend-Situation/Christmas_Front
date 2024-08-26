@@ -10,43 +10,43 @@
 
 # 풀더 구조
 
-client
- ┣ public
- ┃ ┗ index.html
- ┣ src
- ┃ ┣ assets
- ┃ ┃ ┣ font
- ┃ ┃ ┣ icon
- ┃ ┃ ┗ image
- ┃ ┣ components
- ┃ ┣ config
- ┃ ┣ data
- ┃ ┣ hooks
- ┃ ┣ lib
- ┃ ┃ ┣ api
- ┃ ┃ ┗ utils
- ┃ ┃ ┃ ┗ style
- ┃ ┣ pages
- ┃ ┃ ┗ Main
- ┃ ┃ ┃ ┣ index.tsx
- ┃ ┃ ┃ ┗ style.ts
- ┃ ┣ router
- ┃ ┃ ┗ index.tsx
- ┃ ┣ types
- ┃ ┣ App.tsx
- ┃ ┣ index.css
- ┃ ┗ index.tsx
- ┣ .eslintrc
- ┣ .eslintrc.json
- ┣ .gitignore
- ┣ .prettierrc
- ┣ LICENSE
- ┣ LICENSE copy
- ┣ README.md
- ┣ custom.d.ts
- ┣ package.json
- ┣ tsconfig.json
- ┗ yarn.lock
+client <br>
+ ┣ public <br>
+ ┃ ┗ index.html <br>
+ ┣ src <br>
+ ┃ ┣ assets <br>
+ ┃ ┃ ┣ font <br>
+ ┃ ┃ ┣ icon <br>
+ ┃ ┃ ┗ image <br>
+ ┃ ┣ components <br>
+ ┃ ┣ config <br>
+ ┃ ┣ data <br>
+ ┃ ┣ hooks <br>
+ ┃ ┣ lib <br>
+ ┃ ┃ ┣ api <br>
+ ┃ ┃ ┗ utils <br>
+ ┃ ┃ ┃ ┗ style <br>
+ ┃ ┣ pages <br>
+ ┃ ┃ ┗ Main <br>
+ ┃ ┃ ┃ ┣ index.t <br>sx
+ ┃ ┃ ┃ ┗ style.ts <br>
+ ┃ ┣ router <br>
+ ┃ ┃ ┗ index.tsx <br>
+ ┃ ┣ types <br>
+ ┃ ┣ App.tsx <br>
+ ┃ ┣ index.css <br>
+ ┃ ┗ index.tsx <br>
+ ┣ .eslintrc <br>
+ ┣ .eslintrc.json <br>
+ ┣ .gitignore <br>
+ ┣ .prettierrc <br>
+ ┣ LICENSE <br>
+ ┣ LICENSE copy <br>
+ ┣ README.md <br>
+ ┣ custom.d.ts <br>
+ ┣ package.json <br>
+ ┣ tsconfig.json <br>
+ ┗ yarn.lock <br>
 
 # 의존성 및 세팅
 설치되는 의존성 `react-query` `react-router-dom` `styled-components` `TypeScript`
