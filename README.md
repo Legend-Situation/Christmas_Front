@@ -1,46 +1,165 @@
-# Getting Started with Create React App
+# 사용법
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`git clone https://github.com/Jamkris/React_Ts_Setting.git client`
 
-## Available Scripts
+`cd client`
 
-In the project directory, you can run:
+`yarn install`
 
-### `yarn start`
+`yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 풀더 구조
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+client
+ ┣ public
+ ┃ ┗ index.html
+ ┣ src
+ ┃ ┣ assets
+ ┃ ┃ ┣ font
+ ┃ ┃ ┣ icon
+ ┃ ┃ ┗ image
+ ┃ ┣ components
+ ┃ ┣ config
+ ┃ ┣ data
+ ┃ ┣ hooks
+ ┃ ┣ lib
+ ┃ ┃ ┣ api
+ ┃ ┃ ┗ utils
+ ┃ ┃ ┃ ┗ style
+ ┃ ┣ pages
+ ┃ ┃ ┗ Main
+ ┃ ┃ ┃ ┣ index.tsx
+ ┃ ┃ ┃ ┗ style.ts
+ ┃ ┣ router
+ ┃ ┃ ┗ index.tsx
+ ┃ ┣ types
+ ┃ ┣ App.tsx
+ ┃ ┣ index.css
+ ┃ ┗ index.tsx
+ ┣ .eslintrc
+ ┣ .eslintrc.json
+ ┣ .gitignore
+ ┣ .prettierrc
+ ┣ LICENSE
+ ┣ LICENSE copy
+ ┣ README.md
+ ┣ custom.d.ts
+ ┣ package.json
+ ┣ tsconfig.json
+ ┗ yarn.lock
 
-### `yarn test`
+# 의존성 및 세팅
+설치되는 의존성 `react-query` `react-router-dom` `styled-components` `TypeScript`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## prettier
+```
+.prettierrc
 
-### `yarn build`
+{
+  "singleQuote": true,
+  "semi": true,
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "endOfLine": "auto",
+  "arrowParens": "always",
+  "jsxSingleQuote": false,
+  "bracketSpacing": true
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Custom.d.ts
+```
+./custom.d.ts
+declare module '*.svg' {
+  import React = require('react');
+  export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
+  const src: string;
+  export default src;
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+./src/custom.d.ts
+declare module '*.jpg';
+declare module '*.png';
+declare module '*.jpeg';
+declare module '*.svg';
+declare module '*.gif';
+```
+모든 이미지파일 import 가능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Eslint
+```
+.eslintrc
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "ignorePatterns": ["node_modules/"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
+}
 
-### `yarn eject`
+./eslintrc.json
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  }
+}
+```
+입맛에 맛게 조정이 필요함 꽤 깐깐한 eslint 설정
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## tsconfig
+```
+./tsconfig.json
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "typeRoots": ["./node_modules/@types"],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src"
+  },
+  "include": ["src", "src/custom.d.ts"]
+}
+```
+baseUrl = src
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
