@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'UhBee';
-  src: url('./assets/font/UhBee Se_hyun.ttf') format('woff');
+  src: url('./assets/font/UhBee Se_hyun.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'UhBee';
-  src: url('./assets/font/UhBee Se_hyun Bold.ttf') format('woff');
+  src: url('./assets/font/UhBee Se_hyun Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
