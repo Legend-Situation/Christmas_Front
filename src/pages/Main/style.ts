@@ -52,3 +52,4 @@ export const SubTitle = styled.div`
 export const TreeImage = styled.img`
   margin-top: 50px;
 `;
+
