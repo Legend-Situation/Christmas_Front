@@ -51,4 +51,11 @@ export const SubTitle = styled.div`
 
 export const TreeImage = styled.img`
   margin-top: 50px;
+  width: 306px;
+  height: 339px;
+`;
+
+export const StartButton = styled.div`
+  position: absolute;
+  bottom: 30px;
 `;
