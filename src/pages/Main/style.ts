@@ -8,6 +8,7 @@ export const Container = styled.div`
   background: #ffedf0;
   align-items: center;
   position: absolute;
+  padding: 0 20px;
 `;
 
 export const FirstSnows = styled.div`
@@ -42,8 +43,7 @@ export const Title = styled.p`
 export const SubTitle = styled.div`
   color: #5b4248;
   text-align: center;
-  -webkit-text-stroke-width: 0.30000001192092896;
-  -webkit-text-stroke-color: #fff7ee;
+  -webkit-text-stroke: 0.5px #fff7ee;
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
