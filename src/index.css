@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'UhBee';
+  src: url('./assets/font/UhBee Se_hyun.ttf') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'UhBee';
+  src: url('./assets/font/UhBee Se_hyun Bold.ttf') format('woff');
+  font-weight: 700;
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'UhBee';
 }
