@@ -10,10 +10,7 @@ export default function Router() {
       path: '/',
       children: [
         { index: true, element: <Main /> },
-        { path: '/question', element: <Question /> }
-      ]
-      children: [
-        { index: true, element: <Main /> },
+        { path: '/question', element: <Question /> },
         { path: 'intj', element: <Intj /> }
       ]
     }

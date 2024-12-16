@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div<{ imgUrl: string }>`
-  background: url(${(props) => props.imgUrl}) no-repeat  center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url(${(props) => props.imgUrl}) no-repeat;
   padding: 16px 148px;
   color: #fff;
   font-size: 18px;
