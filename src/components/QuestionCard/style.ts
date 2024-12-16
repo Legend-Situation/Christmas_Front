@@ -34,7 +34,9 @@ export const AnswerButton = styled.div<{ imgUrl: string }>`
   font-weight: 400;
   cursor: pointer;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 export const TreeImg = styled.img`
