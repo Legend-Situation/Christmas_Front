@@ -56,7 +56,8 @@ export const TreeImage = styled.img`
 `;
 
 export const StartButton = styled.div`
-  padding: 20px 0 0;
+  width: 100%;
+  padding: 0 20px;
   position: absolute;
   bottom: 30px;
 `;
