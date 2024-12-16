@@ -153,9 +153,8 @@ export const PartnerName = styled.div`
 
 export const ButtonGap = styled.div`
   display: flex;
-  gap: 10px;
   flex-direction: column;
-  width: 100%; /* 부모 요소가 충분한 너비를 가짐 */
+  width: 100%;
 `;
 
 export const Replay = styled.div`

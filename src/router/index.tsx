@@ -2,7 +2,7 @@ import { useRoutes } from 'react-router-dom';
 
 import Main from 'pages/Main';
 import Question from 'pages/Question';
-import Intj from 'pages/result/INTJ';
+import ResultPage from 'pages/Result';
 
 export default function Router() {
   return useRoutes([
@@ -10,10 +10,9 @@ export default function Router() {
       path: '/',
       children: [
         { index: true, element: <Main /> },
-        { path: '/question', element: <Question /> },
-        { path: 'intj', element: <Intj /> }
-      ]
-    }
-    // { path: '*', element: <NotFound /> }
+        { path: 'question', element: <Question /> },
+        { path: 'result', element: <ResultPage /> },
+      ],
+    },
   ]);
 }

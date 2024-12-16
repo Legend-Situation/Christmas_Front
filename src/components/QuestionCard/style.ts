@@ -15,7 +15,6 @@ export const Title = styled.h1`
 export const QuestionText = styled.h2`
   color: #5b4248;
   font-size: 18px;
-  margin-top: 20px;
   font-weight: 400;
 `;
 
@@ -28,9 +27,10 @@ export const Buttons = styled.div`
 
 export const AnswerButton = styled.div<{ imgUrl: string }>`
   background: url(${(props) => props.imgUrl}) no-repeat;
-  padding: 16px 20px;
+  padding: 20px 20px;
+  height: 60px;
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   cursor: pointer;
   width: 100%;
