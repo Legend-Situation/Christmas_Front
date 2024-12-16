@@ -3,8 +3,10 @@ import * as S from './style';
 import Snowflake from 'assets/image/Snowflake';
 import TreeImg from 'assets/image/Tree.png';
 import Button from 'components/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <S.Container>
       <S.FirstSnows>
@@ -21,12 +23,14 @@ const Main = () => {
         <S.SubTitle>나의 크리스마스는 어떨까?</S.SubTitle>
       </S.Texts>
       <S.TreeImage src={TreeImg} />
-      <Button
-        title="시작하기"
-        onClickMethod={() => {
-          return;
-        }}
-      />
+      <S.StartButton>
+        <Button
+          title="시작하기"
+          onClickMethod={() => {
+            navigate('/question');
+          }}
+        />
+      </S.StartButton>
     </S.Container>
   );
 };
