@@ -24,7 +24,7 @@ const QuestionCard = ({ index, question, options, onAnswer }: QuestionCardProps)
         {options.map((option, optionIndex) => (
           <S.AnswerButton
             key={optionIndex}
-            onClick={() => onAnswer(option.value)} // 옵션 value 바로 전달
+            onClick={() => onAnswer(option.value)}
             imgUrl={PinkBackground}
           >
             {option.text}

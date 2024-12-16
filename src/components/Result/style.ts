@@ -66,7 +66,7 @@ export const Character = styled.div`
   transform: translate(-50%, -50%);
   z-index: 2;
   img {
-    width: 100px;
+    width: 110px;
     height: auto;
   }
 `;
@@ -125,8 +125,8 @@ export const PartnerTitle = styled.div`
 
 export const PartnerBackgroundWrapper = styled.div`
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto;
 `;
 

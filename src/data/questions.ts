@@ -25,8 +25,8 @@ export const questions: Question[] = [
     category: 'S/N',
     question: '더현대에 있는 화려한 트리를 보러 왔다. 나의 생각은?',
     options: [
-      { text: '와.. 이건 다 어떻게 만들었을까? 디테일 대박!', value: 'S' },
-      { text: '갑자기 저 안에 있는 트리 괴물이 튀어나오면 어떡해?', value: 'N' },
+      { text: '이건 다 어떻게 만들었을까? 디테일 진짜 대박!', value: 'S' },
+      { text: '갑자기 저기서 트리 괴물이 튀어나오면 어떡해?', value: 'N' },
     ],
   },
   {
@@ -35,7 +35,7 @@ export const questions: Question[] = [
     question: "친구가 갑자기 쓸데없는 선물을 주면서 ‘너도 줘’라고 한다면?",
     options: [
       { text: '일단 받았으니 나도 뭔가 줘야겠지?', value: 'F' },
-      { text: '쓸데없는 걸 굳이 왜 달라고 하는 거지… 주기 싫다', value: 'T' },
+      { text: '쓸데없는 걸 굳이 왜 달라고 하는 거지… 주기 싫다.', value: 'T' },
     ],
   },
   {
@@ -44,7 +44,7 @@ export const questions: Question[] = [
     question: '크리스마스 선물을 사려고 쇼핑하러 나왔는데, 계획에 없던 물건이 눈에 띈다.',
     options: [
       { text: '이거 너무 귀엽다! 그냥 바로 사버릴래.', value: 'P' },
-      { text: '계획에 없던 건데… 정말 필요할까??', value: 'J' },
+      { text: '계획에 없던 건데… 정말 필요할까?', value: 'J' },
     ],
   },
   {
@@ -53,7 +53,7 @@ export const questions: Question[] = [
     question: '크리스마스에 특별히 내가 하고 싶은 것은?',
     options: [
       { text: '이 날만큼은 친구들이랑 특별하게 보내야지!', value: 'F' },
-      { text: '크리스마스는 그냥 평범한 하루 아닐까? 굳이 뭐…', value: 'T' },
+      { text: '크리스마스는 그냥 평범한 하루 아닐까? 굳이…', value: 'T' },
     ],
   },
   {
@@ -62,7 +62,7 @@ export const questions: Question[] = [
     question: '크리스마스 파티에 입고 갈 옷을 고르는 중이다. 나는?',
     options: [
       { text: '이거? 저거? 그냥 기분 내키는 대로 입으면 되지!', value: 'P' },
-      { text: '분명히 사진도 찍을 텐데… 이쁜으로 옷 골라야지.', value: 'J' },
+      { text: '사진도 찍을 텐데.. 가장 이쁜 옷으로 골라야지.', value: 'J' },
     ],
   },
   {
@@ -79,7 +79,7 @@ export const questions: Question[] = [
     category: 'S/N',
     question: '사실.. 산타는 있는데, 너네가 학생 때 1년에 한 번도 안 운 적이 없어서 안 온 거래.',
     options: [
-      { text: '무슨 멍멍이소리야 그게', value: 'S' },
+      { text: '무슨 멍멍이소리야 그게.', value: 'S' },
       { text: '오 일리 있는데..? 울지 말걸…', value: 'N' },
     ],
   },
@@ -88,8 +88,8 @@ export const questions: Question[] = [
     category: 'P/J',
     question: '크리스마스에 가려고 고른 맛집이 문을 닫았다. 나는?',
     options: [
-      { text: '아쉽다. 그냥 지나가다 맛있어 보이는 곳 가자.', value: 'P' },
-      { text: '이럴 수가... 다른 맛집을 검색해봐야겠어', value: 'J' },
+      { text: '그냥 지나가다 맛있어 보이는 곳 들어갈까?', value: 'P' },
+      { text: '이럴 수가.. 빨리 다른 맛집을 찾아보자.', value: 'J' },
     ],
   },
   {
@@ -107,16 +107,16 @@ export const questions: Question[] = [
     question: '크리스마스 선물을 고를 때 나는?',
     options: [
       { text: '현실적으로 유용한 선물이 최고지. 실용성 우선!', value: 'S' },
-      { text: '평소에 상상도 못했던, 특별한 선물을 준비해야지!', value: 'N' },
+      { text: '평소엔 상상도 못했던 선물을 준비해야지!', value: 'N' },
     ],
   },
   {
     id: 12,
     category: 'T/F',
-    question: '크리스마스에 특별히 내가 하고 싶은 것은?',
+    question: '친구가 크리스마스 계획을 물어보면 나는?',
     options: [
-      { text: '이 날만큼은 친구들이랑 특별하게 보내야지!', value: 'F' },
-      { text: '크리스마스는 그냥 평범한 하루 아닐까? 굳이…', value: 'T' },
+      { text: '친구들과 특별한 시간을 보내야겠지!', value: 'F' },
+      { text: '굳이 뭘 해야 하는 건 아니지 않아?', value: 'T' },
     ],
   },
 ];
