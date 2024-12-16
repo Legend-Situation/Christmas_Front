@@ -46,20 +46,24 @@ const Result = ({
       <S.PartnerBox>
         <S.PartnerTitle>나와 크리스마스를 보낼 환상의 짝꿍</S.PartnerTitle>
         <S.PartnerBackgroundWrapper>
-          <S.Background/>
-        <S.PartnerCharacter>
-          <img src={partnerSrc} />
-        </S.PartnerCharacter>
+          <S.Background />
+          <S.PartnerCharacter>
+            <img src={partnerSrc} />
+          </S.PartnerCharacter>
         </S.PartnerBackgroundWrapper>
         <S.PartnerName>{partnerName}</S.PartnerName>
       </S.PartnerBox>
       <S.ButtonGap>
-      <Button title='이미지 저장하기' onClickMethod={() => alert('이미지 저장하기 클릭됨!')} />
-      <Button title='친구들에게 공유하기' onClickMethod={() => alert('친구들에게 공유하기 클릭됨!')} />
+        <Button
+          title="이미지 저장하기"
+          onClickMethod={() => alert('이미지 저장하기 클릭됨!')}
+        />
+        <Button
+          title="친구들에게 공유하기"
+          onClickMethod={() => alert('친구들에게 공유하기 클릭됨!')}
+        />
       </S.ButtonGap>
-      <S.Replay>
-        테스트 다시하기 &gt;
-      </S.Replay>
+      <S.Replay>테스트 다시하기 &gt;</S.Replay>
     </S.Layout>
   );
 };
