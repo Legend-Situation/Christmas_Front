@@ -9,12 +9,12 @@ export const QuestionContainer = styled.div`
 
 export const Title = styled.h1`
   color: #ff6f8d;
-  font-size: 2rem;
+  font-size: 24px;
 `;
 
 export const QuestionText = styled.h2`
   color: #5b4248;
-  font-size: 1.5rem;
+  font-size: 18px;
   margin-top: 20px;
   font-weight: 400;
 `;
