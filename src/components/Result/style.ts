@@ -9,6 +9,7 @@ export const Layout = styled.div`
   width: 100vw;
   overflow: visible;
 `;
+
 export const Ribbon = styled.div`
   position: absolute;
   top: -20px;
@@ -20,7 +21,7 @@ export const Ribbon = styled.div`
 export const Result_Box = styled.div`
   position: relative;
   border-radius: 8px;
-  border: 3px dashed #ff6f8d;
+  border: 4px dashed #ff6f8d;
   background: #fff;
   padding: 50px 20px 40px 20px;
   text-align: center;
@@ -32,7 +33,6 @@ align-items: center;
 
 export const Title = styled.div`
   color: #5b4248;
-  font-family: 'UhBee Se_hyun', sans-serif;
   font-size: 17px;
   font-weight: 400;
   width: 230px;
@@ -76,37 +76,35 @@ export const Character = styled.div`
 export const SubTitle = styled.div`
   color: #5b4248;
   text-align: center;
-  font-family: 'UhBee Se_hyun';
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 180.153%; /* 23.42px */
+  width: 280px;
+
 `;
 
 export const Content = styled.div`
   color: #5b4248;
   text-align: center;
-  font-family: Pretendard;
-  font-size: 14px;
+  font-family: Pretendard !important;
+  font-size: 14.2px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
 `;
 
 export const HashTag = styled.div`
   color: #ff6f8d;
   text-align: center;
-  font-family: 'UhBee Se_hyun';
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
-  line-height: 180%; /* 23.4px */
 `;
 
 export const PartnerBox = styled.div`
   position: relative;
   border-radius: 8px;
-  border: 3px dashed #ff6f8d;
+  border: 3.5px dashed #ff6f8d;
   background: #fff;
   padding: 25px;
   text-align: center;
@@ -118,7 +116,6 @@ export const PartnerBox = styled.div`
 export const PartnerTitle = styled.div`
   color: #5b4248;
   text-align: center;
-  font-family: 'UhBee Se_hyun';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -139,7 +136,7 @@ export const PartnerCharacter = styled.div`
   transform: translate(-50%, -50%);
   z-index: 2;
   img {
-    width: 90px;
+    width: 85px;
     height: auto;
   }
 `;
@@ -147,7 +144,6 @@ export const PartnerCharacter = styled.div`
 export const PartnerName = styled.div`
   color: #ff6f8d;
   text-align: center;
-  font-family: 'UhBee Se_hyun';
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -162,7 +158,6 @@ export const ButtonGap = styled.div`
 export const Replay = styled.div`
   color: #ff6f8d;
   text-align: center;
-  font-family: 'UhBee Se_hyun';
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

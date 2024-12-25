@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as S from './style';
 import Ribbon from '../../assets/image/리본.png';
 import Button from 'components/Button';
@@ -11,6 +12,7 @@ interface ResultProps {
   characterSrc: string;
   partnerSrc: string;
   partnerName: string;
+  saveImageSrc: string;
 }
 
 const Result = ({
@@ -20,8 +22,24 @@ const Result = ({
   hashTag,
   characterSrc,
   partnerSrc,
-  partnerName
+  partnerName,
+  saveImageSrc
 }: ResultProps) => {
+  const history = useNavigate();
+
+  const handleReplay = () => {
+    history('/');
+  };
+
+  const handleImageSave = () => {
+    const link = document.createElement('a');
+    link.href = saveImageSrc;
+    link.download = 'saved_image.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <S.Layout>
       <S.Result_Box>
@@ -54,16 +72,13 @@ const Result = ({
         <S.PartnerName>{partnerName}</S.PartnerName>
       </S.PartnerBox>
       <S.ButtonGap>
-        <Button
-          title="이미지 저장하기"
-          onClickMethod={() => alert('이미지 저장하기 클릭됨!')}
-        />
+        <Button title="이미지 저장하기" onClickMethod={handleImageSave} />
         <Button
           title="친구들에게 공유하기"
           onClickMethod={() => alert('친구들에게 공유하기 클릭됨!')}
         />
       </S.ButtonGap>
-      <S.Replay>테스트 다시하기 &gt;</S.Replay>
+      <S.Replay onClick={handleReplay}>테스트 다시하기 &gt;</S.Replay>
     </S.Layout>
   );
 };

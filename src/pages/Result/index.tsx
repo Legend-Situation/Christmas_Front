@@ -52,6 +52,7 @@ const ResultPage = () => {
       characterSrc={resultInfo.characterSrc}
       partnerSrc={resultInfo.partnerSrc}
       partnerName={resultInfo.partnerName}
+      saveImageSrc={resultInfo.saveImageSrc}
     />
   );
 };

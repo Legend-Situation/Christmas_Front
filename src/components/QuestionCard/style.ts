@@ -14,7 +14,7 @@ export const Title = styled.h1`
 
 export const QuestionText = styled.h2`
   color: #5b4248;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   height: 80px;
 `;
@@ -28,11 +28,10 @@ export const Buttons = styled.div`
 
 export const AnswerButton = styled.div<{ imgUrl: string }>`
   background: url(${(props) => props.imgUrl}) no-repeat;
-  padding: 20px 20px;
-  height: 60px;
+  padding: 20px 12px;
+  height: 68px;
   color: #fff;
-  font-size: 13.5px;
-  -webkit-text-stroke: 0.2px #ff6f8d;
+  font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   width: 100%;
@@ -42,7 +41,7 @@ export const AnswerButton = styled.div<{ imgUrl: string }>`
 `;
 
 export const TreeImg = styled.img`
-  margin-top: 132px;
+  margin-top: 80px;
   width: 159px;
   height: 176px;
   align-self: flex-end;
