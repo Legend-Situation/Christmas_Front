@@ -12,7 +12,7 @@ const Question = () => {
   const navigate = useNavigate();
 
   const handleAnswer = (answer: string) => {
-    const newAnswers = [...answers, answer]; // 새로운 answers 배열 업데이트
+    const newAnswers = [...answers, answer];
     setAnswers(newAnswers);
 
     if (currentIndex < questions.length - 1) {
@@ -20,7 +20,7 @@ const Question = () => {
       setProgress(((currentIndex + 1) / questions.length) * 100);
     } else {
       console.log('Final Answers:', newAnswers);
-      navigate('/result', { state: { answers: newAnswers } }); // 최종 answers 전달
+      navigate('/result', { state: { answers: newAnswers } });
     }
   };
 

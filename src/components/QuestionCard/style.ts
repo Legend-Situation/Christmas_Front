@@ -16,6 +16,7 @@ export const QuestionText = styled.h2`
   color: #5b4248;
   font-size: 18px;
   font-weight: 400;
+  height: 80px;
 `;
 
 export const Buttons = styled.div`
@@ -30,7 +31,8 @@ export const AnswerButton = styled.div<{ imgUrl: string }>`
   padding: 20px 20px;
   height: 60px;
   color: #fff;
-  font-size: 12px;
+  font-size: 13.5px;
+  -webkit-text-stroke: 0.2px #ff6f8d;
   font-weight: 400;
   cursor: pointer;
   width: 100%;
@@ -44,4 +46,5 @@ export const TreeImg = styled.img`
   width: 159px;
   height: 176px;
   align-self: flex-end;
+
 `;

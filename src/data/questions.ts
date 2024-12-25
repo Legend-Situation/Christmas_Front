@@ -13,110 +13,117 @@ interface Question {
 export const questions: Question[] = [
   {
     id: 1,
-    category: 'E/I',
-    question: '크리스마스 당일, 친구들이 크리스마스 파티에 초대한다.',
+    category: 'T/F',
+    question: '친구가 크리스마스 계획을 물어보면 나는?',
     options: [
-      { text: '좋아! 바로 갈게! 사람들 만나는 게 재미있지.', value: 'E' },
-      { text: '파티는 좀 부담스러워… 집에서 쉬는 게 더 좋아.', value: 'I' },
-    ],
+      { text: '이날만큼은 특별하게 보내야지~', value: 'F' },
+      { text: '굳이 뭘 해야 하는 건 아니지 않아?', value: 'T' }
+    ]
   },
   {
     id: 2,
-    category: 'S/N',
-    question: '더현대에 있는 화려한 트리를 보러 왔다. 나의 생각은?',
+    category: 'E/I',
+    question: '크리스마스 당일, 집에서 쉬고 있는데 나오라는 친구의 전화',
     options: [
-      { text: '이건 다 어떻게 만들었을까? 디테일 진짜 대박!', value: 'S' },
-      { text: '갑자기 저기서 트리 괴물이 튀어나오면 어떡해?', value: 'N' },
-    ],
+      { text: '약속도 없었는데 잘 됐다! 지금 바로 갈게!', value: 'E' },
+      { text: '지금 나오라고? 사람 많을 텐데..', value: 'I' }
+    ]
   },
   {
     id: 3,
-    category: 'T/F',
-    question: "친구가 갑자기 쓸데없는 선물을 주면서 ‘너도 줘’라고 한다면?",
+    category: 'E/I',
+    question: '약속 시간 1시간 전 친구에게 걸려 온 전화! 너 뭐 입고 나올 거야?',
     options: [
-      { text: '일단 받았으니 나도 뭔가 줘야겠지?', value: 'F' },
-      { text: '쓸데없는 걸 굳이 왜 달라고 하는 거지… 주기 싫다.', value: 'T' },
-    ],
+      { text: '1년에 한 번인 데 힘 좀 줘야지~ㅎㅎ', value: 'E' },
+      { text: '튀기 싫어! 적당히 무난하게 입을 거야.', value: 'I' }
+    ]
   },
   {
     id: 4,
-    category: 'P/J',
-    question: '크리스마스 선물을 사려고 쇼핑하러 나왔는데, 계획에 없던 물건이 눈에 띈다.',
+    category: 'S/N',
+    question: '더현대에 있는 화려한 트리를 보러 왔다. 내 생각은?',
     options: [
-      { text: '이거 너무 귀엽다! 그냥 바로 사버릴래.', value: 'P' },
-      { text: '계획에 없던 건데… 정말 필요할까?', value: 'J' },
-    ],
+      { text: '와 진짜 이쁘다. 이건 다 어떻게 만들었을까?', value: 'S' },
+      { text: '(갑자기 트리 괴물이 튀어나오면 어떡하지?)', value: 'N' }
+    ]
   },
   {
     id: 5,
     category: 'T/F',
-    question: '크리스마스에 특별히 내가 하고 싶은 것은?',
+    question: '친구가 갑자기 쓸데없는 선물을 주면서 ‘너도 줘’라고 한다면?',
     options: [
-      { text: '이 날만큼은 친구들이랑 특별하게 보내야지!', value: 'F' },
-      { text: '크리스마스는 그냥 평범한 하루 아닐까? 굳이…', value: 'T' },
-    ],
+      { text: '일단 받았으니 나도 뭔가 줘야겠지?', value: 'F' },
+      { text: '쓸데없는 걸 굳이 왜 주고받는 거지..', value: 'T' }
+    ]
   },
   {
     id: 6,
     category: 'P/J',
-    question: '크리스마스 파티에 입고 갈 옷을 고르는 중이다. 나는?',
+    question:
+      '크리스마스 선물을 사려고 쇼핑하러 왔는데, 계획에 없던 물건이 눈에 띈다.',
     options: [
-      { text: '이거? 저거? 그냥 기분 내키는 대로 입으면 되지!', value: 'P' },
-      { text: '사진도 찍을 텐데.. 가장 이쁜 옷으로 골라야지.', value: 'J' },
-    ],
+      { text: '이건 지금 안 사면 후회할 것 같아ㅠㅠㅠ', value: 'P' },
+      { text: '계획에 없었던 건 사지 말자..', value: 'J' }
+    ]
   },
+
   {
     id: 7,
     category: 'E/I',
-    question: '크리스마스에 눈이 펑펑 온다. 나는?',
+    question: '화이트 크리스마스! 밖에 눈이 펑펑 온다. 나는?',
     options: [
-      { text: '너무 예쁘다! 친구들이랑 나가서 눈싸움 해야지!', value: 'E' },
-      { text: '창밖으로 보는 걸로 충분해… 나가면 너무 추워.', value: 'I' },
-    ],
+      {
+        text: '헐! 지금 당장 나가서 구경해야지!',
+        value: 'E'
+      },
+      { text: '창밖으로 보는 걸로 충분해… 나가면 너무 추워.', value: 'I' }
+    ]
   },
   {
     id: 8,
     category: 'S/N',
-    question: '사실.. 산타는 있는데, 너네가 학생 때 1년에 한 번도 안 운 적이 없어서 안 온 거래.',
+    question:
+      '사실.. 산타는 있는데, 너희가 1년 동안 한 번도 안 운 적이 없어서 안 온 거래.',
     options: [
-      { text: '무슨 멍멍이소리야 그게.', value: 'S' },
-      { text: '오 일리 있는데..? 울지 말걸…', value: 'N' },
-    ],
+      { text: '무슨 멍멍이 소리야 그게.', value: 'S' },
+      { text: '오 일리 있는데..? 울지 말걸…', value: 'N' }
+    ]
   },
   {
     id: 9,
     category: 'P/J',
     question: '크리스마스에 가려고 고른 맛집이 문을 닫았다. 나는?',
     options: [
-      { text: '그냥 지나가다 맛있어 보이는 곳 들어갈까?', value: 'P' },
-      { text: '이럴 수가.. 빨리 다른 맛집을 찾아보자.', value: 'J' },
-    ],
+      { text: '어쩔 수 없지! 그냥 아무 데나 들어가자!', value: 'P' },
+      { text: '이럴 수가..ㅠ 빨리 다른 맛집을 찾아보자.', value: 'J' }
+    ]
   },
   {
     id: 10,
-    category: 'E/I',
-    question: '크리스마스 이브 밤, 갑자기 친구가 만나자고 한다.',
+    category: 'T/F',
+    question:
+      '산타와 루돌프가 선물을 놓고 가려다 내 방을 어질러놨다. 누구에게 더 화가 날까?',
     options: [
-      { text: '할 것도 없었는데 잘됐다! 바로 나갈 준비해야지.', value: 'E' },
-      { text: '갑자기 만나자고? 너무 부담스러운데…', value: 'I' },
-    ],
+      { text: '사과는 하지도 않고 정리부터 하는 산타', value: 'F' },
+      { text: '눈물을 머금으며 사과만 30분 동안 하는 루돌프', value: 'T' }
+    ]
   },
   {
     id: 11,
-    category: 'S/N',
-    question: '크리스마스 선물을 고를 때 나는?',
+    category: 'P/J',
+    question: '산타와 루돌프의 수습 시작!',
     options: [
-      { text: '현실적으로 유용한 선물이 최고지. 실용성 우선!', value: 'S' },
-      { text: '평소엔 상상도 못했던 선물을 준비해야지!', value: 'N' },
-    ],
+      { text: '그냥 알아서 깨끗하게 치워줘.', value: 'P' },
+      { text: '이건 저기 두고, 아니다.. 그냥 내가 할게.', value: 'J' }
+    ]
   },
   {
     id: 12,
-    category: 'T/F',
-    question: '친구가 크리스마스 계획을 물어보면 나는?',
+    category: 'S/N',
+    question: '수습을 끝낸 산타와 루돌프가 인사를 하고 떠난다. 어떤 모습으로 떠났는가?',
     options: [
-      { text: '친구들과 특별한 시간을 보내야겠지!', value: 'F' },
-      { text: '굳이 뭘 해야 하는 건 아니지 않아?', value: 'T' },
-    ],
-  },
+      { text: '내 방문을 열고 걸어 나간다.', value: 'S' },
+      { text: '창문을 열고 하늘로 날아간다.', value: 'N' }
+    ]
+  }
 ];

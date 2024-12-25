@@ -27,13 +27,15 @@ export const Result_Box = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+align-items: center;
 `;
 
 export const Title = styled.div`
   color: #5b4248;
   font-family: 'UhBee Se_hyun', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
+  width: 230px;
 `;
 
 export const BackgroundWrapper = styled.div`
@@ -120,7 +122,7 @@ export const PartnerTitle = styled.div`
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 180%; /* 23.4px */
+  line-height: 180%;
 `;
 
 export const PartnerBackgroundWrapper = styled.div`
