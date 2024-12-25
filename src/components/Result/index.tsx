@@ -34,10 +34,34 @@ const Result = ({
   const handleImageSave = () => {
     const link = document.createElement('a');
     link.href = saveImageSrc;
-    link.download = 'saved_image.png';
+    link.download = `${title}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleShare = () => {
+    const shareUrl = window.location.href;
+
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText(shareUrl)
+        .then(() => {
+          alert('URL이 복사되었습니다!');
+        })
+        .catch((err) => {
+          console.error('클립보드 복사 실패:', err);
+        });
+    } else {
+      const textArea = document.createElement('textarea');
+      textArea.value = shareUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      alert('URL이 복사되었습니다!');
+    }
   };
 
   return (
@@ -73,10 +97,7 @@ const Result = ({
       </S.PartnerBox>
       <S.ButtonGap>
         <Button title="이미지 저장하기" onClickMethod={handleImageSave} />
-        <Button
-          title="친구들에게 공유하기"
-          onClickMethod={() => alert('친구들에게 공유하기 클릭됨!')}
-        />
+        <Button title="친구들에게 공유하기" onClickMethod={handleShare} />
       </S.ButtonGap>
       <S.Replay onClick={handleReplay}>테스트 다시하기 &gt;</S.Replay>
     </S.Layout>
